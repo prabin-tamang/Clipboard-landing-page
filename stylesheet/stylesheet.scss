@@ -1,0 +1,441 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$primary-cyan:  hsl(171, 66%, 44%);
+$primary-light-blue: hsl(233, 100%, 69%);
+
+
+$neutral-dark-grayish-blue:  hsl(210, 10%, 33%);
+$netural-grayish-blue: hsl(201, 11%, 66%);
+$neutral-footer: #f5f6f8;
+
+
+//18 px body copy
+
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 600;
+    color: $neutral-dark-grayish-blue
+}
+
+
+h2{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 1.5em;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+p{
+    line-height: 1.5;
+    color: $netural-grayish-blue;
+    font-size: 1.1250em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+section {
+    padding: 3em 0;
+}
+
+header{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-top: 8em;
+    padding-bottom: 1em;
+    margin-bottom: 8em;
+    grid-gap: 4em;
+    background: url(../images/bg-header-mobile.png)no-repeat;
+}
+
+    header svg{
+        margin: 0 auto;
+    }
+
+    main{
+        text-align: center;
+        padding: 1.2em;
+
+    }
+
+.hero{
+        width: 90%;
+        margin: 0 auto;
+
+        &__heading{
+            margin-bottom: .5em;
+        }
+      
+
+        &__intro{
+            text-align: center;
+        }
+
+        &__intro p{
+            margin-bottom: 3em;
+        }
+
+        &__link{
+            display: block;
+            background-color: $primary-cyan;
+            margin-bottom: 1.5em;
+            padding: 1.1em 5.5em;
+            display: inline-block;
+            border-radius: 30px;
+            //box-shadow: 4px 13px 25px -4px $primary-cyan ;
+            color: #efefef;
+            font-weight: 600;
+        }
+
+        &__link:last-child{
+            background: $primary-light-blue;
+            margin: 0;
+        }
+}
+
+
+.snippets{
+
+    &__heading{
+        margin-bottom: .8em;
+    }
+
+
+    &__paragraph{
+        padding-bottom: 5em;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 3em;
+        padding: 5em 0;
+    }
+
+    &__container h4{
+        margin-bottom: 0.8em;
+    }
+
+}
+
+.accessClipboard{
+
+    &__heading{
+        margin-bottom: .8em;
+    }
+
+    &__image{
+        padding-top: 5em;
+    }
+}
+
+
+.workflow{
+        &__heading{
+            margin-bottom: .8em;
+        }
+
+        &__container{
+            padding-top: 5em;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 4em;
+        }
+
+        &__container svg{
+            margin-bottom: 2.5em;
+        }
+
+        &__item h4{
+            margin-bottom: 0.8em;
+        }
+}
+
+.companies{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 4em;
+}
+
+.companies img{
+    margin: 0 auto;
+}
+
+
+
+.clipBoard{
+        &__heading{
+            margin-bottom: .8em;
+        }
+
+        &__link{
+            display: block;
+            background-color: $primary-cyan;
+            margin-bottom: 1.5em;
+            padding: 1.1em 5.5em;
+            display: inline-block;
+            border-radius: 30px;
+            //box-shadow: 4px 13px 25px -4px $primary-cyan ;
+            color: #efefef;
+            font-weight: 600;
+        }
+
+        &__link:hover{
+            opacity: 0.8;
+            transition: 0.3s ease-in-out;
+    }
+
+        &__paragraph{
+            margin-bottom: 3em;
+        }
+
+        &__link:last-child{
+            background: $primary-light-blue;
+            margin: 0;
+        }
+}
+
+
+
+
+
+.footer{
+    background-color:$neutral-footer;
+    text-align: center;
+    padding: 2.5em 0;
+
+
+
+     
+    &__background{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    &__navigation{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+
+
+    &__navigation ul li{
+            margin-bottom: 1.7em;
+    }
+
+    &__navigation ul li a:hover{
+        color: $primary-cyan;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    &__logo{
+        width: 15%;
+        margin: 0 auto;
+      
+    }
+    
+    &__socials{
+        padding: 1.5em 0;
+    }
+
+
+
+    &__socials svg{
+        margin-right: 1.8em;
+    }
+
+    &__socials svg:last-child{
+        margin: 0;
+    }
+
+
+}
+
+
+
+@media (min-width: 1000px){
+
+
+    header{
+       
+        background: url(../images/bg-header-desktop.png)no-repeat;
+        background-size: cover;
+    }
+
+    img{
+        display:  inline-block;
+        max-width: 100%;
+    }
+
+    section{
+        padding: 5em 0;
+    }
+
+
+    .snippets__intro,
+    .clipBoard__intro
+{
+    max-width: 45em;
+    margin: 0 auto;
+}
+
+  
+    .hero{
+        max-width: 40em;
+        margin: 0 auto;
+
+        &__link{
+            padding: .8em 2em;
+            margin-right: .7em;
+        }
+
+        &__link:hover{
+                opacity: 0.8;
+                transition: 0.3s ease-in-out;
+        }
+
+        &__link::last-child{
+            margin: 0;
+        }
+
+    }
+
+
+
+    .snippets{
+      
+     
+
+            &__columnGrid{
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-column-gap: 3em;
+                max-width: 1150px;
+              
+              
+            }
+
+            &__container{
+                text-align: left;
+                
+            }
+
+            &__columnGrid img{
+                margin-left: -60px;
+            }
+        }
+
+
+        .footer{
+       
+            &__background{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+    
+            &__navigation{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                text-align: left;
+                
+            }
+
+            &__navigation ul{
+                margin-right: 5em;
+            }
+
+            &__navigation ul:last-child{
+                margin: 0;
+            }
+
+            &__logo{
+                width: 5%;
+                margin: 0;
+            }
+
+            &__socials{
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+    
+    
+    }
+
+
+.workflow{
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: none;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 5em;
+    }
+}
+
+.companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accessClipboard{
+    padding: 0;
+
+    &__image{
+        padding:0;
+        padding-top: 5em;
+     }
+}
+
+
+.clipBoard{
+    &__link{
+        padding: .8em 2em;
+        margin-right: .7em;
+    }
+
+    &__link::last-child{
+        margin: 0;
+    }
+
+    }
+
+}
+
+
+
+
