@@ -68,7 +68,7 @@ header{
     grid-template-rows: auto 1fr;
     padding-top: 8em;
     padding-bottom: 1em;
-    margin-bottom: 8em;
+    margin-bottom: 3em;
     grid-gap: 4em;
     background: url(../images/bg-header-mobile.png)no-repeat;
 }
@@ -313,7 +313,8 @@ header{
 
 
     .snippets__intro,
-    .clipBoard__intro
+    .clipBoard__intro,
+    .accessClipboard
 {
     max-width: 45em;
     margin: 0 auto;
